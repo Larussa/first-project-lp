@@ -43,6 +43,7 @@ blockquote {
 /* 
 	text color, text align, float, backgrounds colors, text transform
 */
+
 .text-center {
 	text-align: center;
 }
@@ -84,8 +85,33 @@ blockquote {
 
 .container-fluid {
 	padding: 0 15px;
+	margin: 0 auto;
 }
-
+.header {
+    overflow: hidden;
+    padding: 27px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 500;
+}
+.header .logo {
+    float: left;
+}
+.header .header-nav {
+	float: right;
+	letter-spacing: .3em;
+	text-transform: uppercase;
+	color: rgba(255, 255, 255,.75);
+	font-size: 11px;
+	line-height: 21px;
+}
+.header .header-nav li {
+    float: left; 
+}
+.header .header-nav li + li {
+    margin-left: 35px;
+}
 .title {
 	font-family: 'Dosis', sans-serif;
 	text-transform: uppercase;
@@ -158,5 +184,37 @@ blockquote span,
 	font-size: 11px;
 }
 /* ===== Default component end ===== */
+/* === Custom styles start === */
+.inner {
+	padding-top:160px;
+	background: url('../img/bg.jpg') no-repeat center / cover;
+	height: 100vh;
+	text-align: center;
+}
+.inner::before {
+	content:'';
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+	margin-left: -4px;
+}
+.inner-content {
+	display: inline-block;
+	vertical-align: middle;
+}
+.inner-content h1 {
+	font: 400 30px/1 "Dosis";
+    letter-spacing: 1.7em;
+    color: rgba(255, 255, 255,.9);
+    text-transform: uppercase;
+    text-indent: 1.7em;
+}
+.inner-content span {
+	display: inline-block;
+    font-size: 19px;
+    color: rgba(255, 255, 255,.68);
+    margin-top: 100px;
+}
+/* === Custom styles end === */
 
 
