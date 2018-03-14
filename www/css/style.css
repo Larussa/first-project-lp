@@ -88,12 +88,13 @@ blockquote {
 	margin: 0 auto;
 }
 .header {
+	background-color: #a0a0a0;
     overflow: hidden;
-    padding: 27px 0;
+    padding: 27px 15px;
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 500;
+    z-index: 99;
 }
 .header .logo {
     float: left;
