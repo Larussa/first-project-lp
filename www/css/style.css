@@ -156,6 +156,7 @@ blockquote span,
 	font-size: 12px;
 	text-transform: uppercase;
 	font-weight: 400;
+	letter-spacing: .2em;
 }
 .btn.btn-default {
 	background-color: #e5e5e5;
@@ -210,8 +211,12 @@ blockquote span,
 }
 /* ---- Inner End ---- */
 /* ---- About studio---- */
+.about-studio {
+	border-bottom: 1px solid #ececec;
+}
 .about-studio .about-studio-text {
 	margin-bottom:100px;
+	border-bottom: 1px solid #ececec;
 }
 .about-studio .team-item .team-item-info {
     font-family: "Dosis", sans-serif;
