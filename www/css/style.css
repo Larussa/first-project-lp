@@ -43,23 +43,18 @@ blockquote {
 /* 
 	text color, text align, float, backgrounds colors, text transform
 */
-
 .text-center {
 	text-align: center;
 }
-
 .text-right {
 	text-align: right;
 }
-
 .text-justify {
 	text-align: justify;
 }
-
 .bg-black {
 	background-color: #111;
 }
-
 .bg-grey {
 	background-color: #f8f8f8;
 }
@@ -71,18 +66,16 @@ blockquote {
 */
 .default-section {
 	padding: 135px 0;
+	overflow: hidden;
 }
-
 .small-section {
 	padding: 70px 0;
 }
-
 .container {
 	max-width: 1200px; /* 1200 - 30 = 1170 */
 	padding: 0 15px;
 	margin: auto;
 }
-
 .container-fluid {
 	padding: 0 15px;
 	margin: 0 auto;
@@ -90,7 +83,7 @@ blockquote {
 .header {
 	background-color: #a0a0a0;
     overflow: hidden;
-    padding: 27px 15px;
+    padding: 27px 0;
     position: fixed;
     top: 0;
     width: 100%;
@@ -113,10 +106,11 @@ blockquote {
 .header .header-nav li + li {
     margin-left: 35px;
 }
-.title {
+.title, .title-small {
 	font-family: 'Dosis', sans-serif;
 	text-transform: uppercase;
 	color: #111;
+	font-weight: 400;
 }
 .title.title-white {
 	color: #fff;
@@ -133,13 +127,16 @@ blockquote {
 	margin-bottom: 20px;
 	font-weight: 300;
 }
-
+.title-small {
+	font-size: 15px;
+	letter-spacing: .4em;
+	margin-bottom: 35px;
+}
 .default-text {
 	font-size: 15px;
 	line-height: 1.7333;
 	font-weight: 300;
 }
-
 blockquote, 
 .blockquote {
 	font-size: 24px;
@@ -152,7 +149,6 @@ blockquote span,
 	text-transform: uppercase;
 	letter-spacing: .2em;
 }
-
 .btn {
 	display: inline-block;
 	padding: 12px 20px;
@@ -161,31 +157,27 @@ blockquote span,
 	text-transform: uppercase;
 	font-weight: 400;
 }
-
 .btn.btn-default {
 	background-color: #e5e5e5;
 	color: #777;
 }
-
 .btn.btn-default:hover {
 	background-color: #d1d0d0;
 }
-
 .btn.btn-black {
 	background-color: #323232;
 	color: #fff;
 }
-
 .btn.btn-black:hover {
 	background-color: #000;
 }
-
 .btn.btn-xs {
 	padding: 7px 15px;
 	font-size: 11px;
 }
 /* ===== Default component end ===== */
 /* === Custom styles start === */
+/* ---- Inner ---- */
 .inner {
 	padding-top:77px;
 	background: url('../img/bg.jpg') no-repeat center / cover;
@@ -215,6 +207,96 @@ blockquote span,
     font-size: 19px;
     color: rgba(255, 255, 255,.68);
     margin-top: 100px;
+}
+/* ---- Inner End ---- */
+/* ---- About studio---- */
+.about-studio .about-studio-text {
+	margin-bottom:100px;
+}
+.about-studio .team-item .team-item-info {
+    font-family: "Dosis", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .4em;
+} 
+.about-studio .team-item .team-item-info .team-item-role {
+	font-size: 12px;
+	margin-top: 12px;
+}
+.about-studio .team-item .team-item-img{
+	margin-bottom: 27px;
+	position: relative;
+}
+.about-studio .team-item .team-item-img img{
+	filter: grayscale(100%);
+	transition: all .3s linear;
+}
+.about-studio .team-item .team-item-img:hover img{
+	filter: grayscale(0%);
+}
+.team-item .team-item-skills {
+	opacity: 0;
+	position: absolute;
+	top:0;
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	transition: all .2s linear;
+}
+.team-item .team-item-img:hover .team-item-skills {
+	opacity: 1;
+}
+/* ---- About studio End---- */
+/* Why-choose-us */
+.why-choose-us .why-choose-us-features .row + .row{
+	margin-top: 80px;
+}
+.why-choose-us .title {
+	margin-bottom: 80px;
+}
+.why-choose-us .title-small {
+    margin-top: 33px;
+}
+.icon-why-choose-as .icon {
+	font-size:48px;
+}
+/* Why-choose-us end */
+/* latest-news */
+.latest-news .title-link {
+	float: right;
+	font-size: 11px;
+	letter-spacing: .4em;
+	color: #999999;
+	text-transform: uppercase;	
+	line-height: 2.5em;	
+}
+.latest-news .news-item .news-item-info {
+    font-family: "Dosis", sans-serif;
+    text-transform: uppercase;
+	letter-spacing: .2em;
+	margin: 35px 0 25px 0;
+} 
+.latest-news .news-item .news-item-date {
+	font-size: 11px;
+	margin-top: 12px;
+	letter-spacing: .4em;
+}
+.news-item .news-item-img {
+	position: relative;
+}
+.latest-news .news-item .news-item-img img{
+	filter: grayscale(75%);
+	transition: all .3s linear;
+}
+.latest-news .news-item .news-item-img:hover img{
+	filter: grayscale(0%);
+}
+/* latest-news end*/
+.news-item .news-item-img, .news-item .news-item-img {
+	position: relative;
+	margin-bottom: 30px;
+}
+.news-item .btn {
+	margin-top: 30px;
 }
 /* === Custom styles end === */
 
