@@ -2,6 +2,9 @@
 *{
 	box-sizing: border-box;
 }
+*:focus {
+	outline:none;
+}
 body{
 	margin: 0;
 	background-color: #fff;
@@ -27,13 +30,24 @@ ul, ol{
 	padding: 0;
 	margin: 0;
 }
+input,
+textarea,
+button {
+	outline: none;
+	border:none;
+}
+textarea {
+	resize: vertical;
+}
+input[type="submit"] {
+	cursor: pointer;
+}
 img {
 	max-width: 100%;
 }
 button {
-	outline: none;
-	border: none;
 	cursor: pointer;
+	background-color: transparent;
 }
 blockquote {
 	margin: 0;
@@ -158,6 +172,10 @@ blockquote span,
 	font-weight: 400;
 	letter-spacing: .2em;
 }
+.btn[disabled] {
+	cursor:not-allowed;
+	opacity: .6;
+}
 .btn.btn-default {
 	background-color: #e5e5e5;
 	color: #777;
@@ -176,7 +194,47 @@ blockquote span,
 	padding: 7px 15px;
 	font-size: 11px;
 }
+.form-control {
+	width: 100%;
+	border: 1px solid #e5e5e5;
+	border-radius: 2px;
+	height: 36px;
+	font: 400 12px 'Open Sans', sans-serif; 
+	text-transform:uppercase;
+	letter-spacing: .2em;
+	color:#777;
+	padding: 0 13px;
+}
+.form-control:focus {
+	border-color:#111;
+}
+textarea.form-control {
+	min-height: 82px;
+	padding-top: 10px;
+}
+.form-control[disabled],
+.form-control.disabled {
+	cursor: not-allowed;
+	opacity: .6;
+}
+.form-control.error {
+	border-color:#f57e7e;
+}
+.form-info {
+	font-size: 11px;
+	color: #aaa;
+	font-weight: 400;
+}
+.form-info .fa {
+	font-size: 12px;
+}
 /* ===== Default component end ===== */
+/* ---- Guide styles start */
+.guide-section form .form-control {
+	margin-bottom:10px;
+}
+
+/* ---- Guide styles end */
 /* === Custom styles start === */
 /* ---- Inner ---- */
 .inner {
@@ -216,7 +274,6 @@ blockquote span,
 }
 .about-studio .about-studio-text {
 	margin-bottom:100px;
-	border-bottom: 1px solid #ececec;
 }
 .about-studio .team-item .team-item-info {
     font-family: "Dosis", sans-serif;
@@ -251,8 +308,95 @@ blockquote span,
 	opacity: 1;
 }
 /* ---- About studio End---- */
+/* ---- Services---- */
+#tabs {
+	overflow: hidden;
+	position: relative;
+}
+#tabs .tabs-nav li {
+	float:left;
+	width: 20%;
+	text-align: center;
+	color: rgba(17, 17, 17,.5)
+}
+#tabs .tabs-nav li span {
+	display: inline-block;
+}
+#tabs .tabs-nav .icon-title {
+	display: block;
+	font-family: 'Dosis', sans-serif;
+	text-transform: uppercase;
+	font-weight: 400; 
+	font-size: 14px;
+	margin: 35px 0 80px 0;
+	letter-spacing: .4em;
+}
+.tabs-nav .ui-state-active span {
+	color:#111111;
+   }
+#tabs .tabs-nav .icon {
+	font-size: 48px;
+}
+/* ---- Services End---- */
+/* ---- Lets talk---- */
+.lets-talk-content {
+	padding: 140px 0;
+}
+.lets-talk-content p {
+	color: rgba(255, 255, 255, .7);
+	margin-bottom: 35px;
+}
+.lets-talk .lets-talk-img {
+	margin-top: -32px;
+
+}
+/* ---- Lets talk end---- */
+/* ---- Portfolio---- */
+.text-portfolio {
+	max-width: 750px;
+	margin: 0 auto;
+}
+#portfolio-tabs {
+	overflow: hidden;
+}
+.tabs-content {
+	margin: 0 -3px;
+}
+#portfolio-tabs .portfolio-tabs-nav {
+	font-family: 'Dosis', sans-serif;
+	text-transform: uppercase;
+	font-weight: 400; 
+	font-size: 13px;
+	letter-spacing: .4em;
+}
+#portfolio-tabs .portfolio-tabs-nav li {
+	float:none;
+	color: rgba(17, 17, 17,.5);
+	display:inline-block;
+	margin: 85px 0 50px 0;
+}
+#portfolio-tabs .portfolio-tabs-nav .ui-state-active a {
+	color:#111111;
+}
+#portfolio-tabs .portfolio-tabs-nav li + li {
+	margin-left: 65px;
+}
+#portfolio-tabs .tabs-content .portfolio-item {
+	float:left;
+	width: 33.33333%;
+	padding: 3px;
+}
+.tabs-content .portfolio-item img {
+	filter: grayscale(100%);
+	transition: all .3s linear;
+	width:100%;
+}
+.tabs-content .portfolio-item:hover img {
+	filter: grayscale(0%);
+}
+/* ---- Portfolio End---- */
 /* Why-choose-us */
-.why-choose-us .why-choose-us-features .row + .row{
+.why-choose-us .why-choose-us-features .row + .row {
 	margin-top: 80px;
 }
 .why-choose-us .title {
@@ -288,11 +432,11 @@ blockquote span,
 .news-item .news-item-img {
 	position: relative;
 }
-.latest-news .news-item .news-item-img img{
+.latest-news .news-item .news-item-img img {
 	filter: grayscale(75%);
 	transition: all .3s linear;
 }
-.latest-news .news-item .news-item-img:hover img{
+.latest-news .news-item .news-item-img:hover img {
 	filter: grayscale(0%);
 }
 /* latest-news end*/
@@ -303,6 +447,14 @@ blockquote span,
 .news-item .btn {
 	margin-top: 30px;
 }
+/* === Subscribe === */
+.subscribe form .form-control {
+	max-width: 290px;
+}
+.subscribe .form-info {
+	margin-top: 17px;
+}
+/* === Subscribe End=== */
 /* === Custom styles end === */
 
 
