@@ -133,7 +133,7 @@ blockquote {
 	font-size: 18px;
 	letter-spacing: .5em; /* 0.5em = .5em */
 	margin-bottom: 75px;
-	font-weight: 400;
+	font-weight: 500;
 }
 .title.section-title-light {
 	font-size: 18px;
@@ -278,7 +278,8 @@ textarea.form-control {
 .about-studio .team-item .team-item-info {
     font-family: "Dosis", sans-serif;
     text-transform: uppercase;
-    letter-spacing: .4em;
+	letter-spacing: .4em;
+	font-weight: 400;
 } 
 .about-studio .team-item .team-item-info .team-item-role {
 	font-size: 12px;
@@ -368,12 +369,12 @@ textarea.form-control {
 	font-weight: 400; 
 	font-size: 13px;
 	letter-spacing: .4em;
+	margin: 85px 0 50px 0;
 }
 #portfolio-tabs .portfolio-tabs-nav li {
 	float:none;
 	color: rgba(17, 17, 17,.5);
 	display:inline-block;
-	margin: 85px 0 50px 0;
 }
 #portfolio-tabs .portfolio-tabs-nav .ui-state-active a {
 	color:#111111;
