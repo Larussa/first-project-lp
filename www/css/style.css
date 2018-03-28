@@ -48,6 +48,7 @@ img {
 button {
 	cursor: pointer;
 	background-color: transparent;
+	padding: 0;
 }
 blockquote {
 	margin: 0;
@@ -71,6 +72,10 @@ blockquote {
 }
 .bg-grey {
 	background-color: #f8f8f8;
+}
+.m-auto {
+	float:none;
+	margin: 0 auto;
 }
 /* ===== Default classes end */
 /* ===== Default component start ===== */
@@ -228,12 +233,34 @@ textarea.form-control {
 .form-info .fa {
 	font-size: 12px;
 }
+.romb-icon {
+	display: inline-block;
+	width:23px;
+	height: 23px;
+	text-align: center;
+	line-height: 23px;
+	border-radius: 2px;
+	font-size:14px;
+	transform: rotate(45deg);
+}
+.romb-icon i {
+	transform: rotate(-45deg);
+}
+.romb-icon.black-icon {
+	color:#fff;
+	background-color: #111;
+}
+.romb-icon.transparent-icon {
+	color: #111;
+	border: 1px solid rgba(0, 0, 0, .7);
+	width: 25px;
+	height: 25px;
+}
 /* ===== Default component end ===== */
 /* ---- Guide styles start */
 .guide-section form .form-control {
 	margin-bottom:10px;
 }
-
 /* ---- Guide styles end */
 /* === Custom styles start === */
 /* ---- Inner ---- */
@@ -410,7 +437,100 @@ textarea.form-control {
 	font-size:48px;
 }
 /* Why-choose-us end */
-/* latest-news */
+
+/* ----- Review carousel start---- */
+.reviews-carousel {
+	padding: 135px 0;
+	overflow: hidden;
+}
+.reviews-carousel .icon {
+	font-size: 32px;
+	margin-bottom: 25px;
+}
+.reviews-carousel p {
+    font-size: 18px;
+    color: rgba(255, 255, 255,.75);
+    margin-bottom: 20px;
+    max-width: 750px;
+    margin: 0 auto 20px auto;
+    line-height: 1.7;
+}
+.reviews-carousel .review-author {
+    color: rgba(255, 255, 255,.3);
+    font-size: 11px;
+    letter-spacing: .2em;
+	text-transform: uppercase;
+}
+.slick-dots {
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	bottom: 30px;
+}
+.slick-dots li {
+	display: inline-block;
+	width: 9px;
+	height: 9px;
+	background-color:rgba(255, 255, 255, .8);
+	border: 1px solid #000;
+	border-radius: 50%;
+	cursor: pointer;
+}
+.slick-dots li button {
+	display: none;
+}
+.slick-dots li + li {
+	margin-left: 5px;
+}
+.slick-dots li.slick-active {
+	background-color:#000;
+	border: 1px solid rgba(255, 255, 255, .8);
+}
+.slick-arrow {
+	position: absolute;
+	height: 100%;
+	top:0;
+	z-index: 1;
+	width: 90px;
+	cursor: pointer;
+}
+.slick-arrow.slick-prev {
+	left:0px;
+}
+.slick-arrow.slick-next {
+	right:0;
+}
+.slick-arrow.slick-next .carousel-button {
+	right:0;
+	margin-right:-32px;
+}
+.slick-arrow .carousel-button .fa {
+	transform: rotate(-45deg);
+	font-size:15px;
+	position: relative;
+}
+.slick-arrow.slick-prev .carousel-button .fa {
+	left: 12px;
+	bottom: 12px;
+}
+.slick-arrow.slick-next .carousel-button .fa {
+	left: -12px;
+	bottom: -12px;	
+}
+.slick-arrow .carousel-button {
+	width: 64px;
+	height: 64px;
+	background: #fff;
+	text-align: center;
+	line-height: 64px;
+	transform:translateY(-50%) rotate(45deg);
+	position: absolute;
+	bottom: auto;
+	top:50%;
+	margin-left: -32px;
+}
+/* ----- Review carousel end---- */
+/* ----- latest-news----- */
 .latest-news .title-link {
 	float: right;
 	font-size: 11px;
@@ -424,6 +544,7 @@ textarea.form-control {
     text-transform: uppercase;
 	letter-spacing: .2em;
 	margin: 35px 0 25px 0;
+	font-weight:400;
 } 
 .latest-news .news-item .news-item-date {
 	font-size: 11px;
@@ -456,6 +577,59 @@ textarea.form-control {
 	margin-top: 17px;
 }
 /* === Subscribe End=== */
+/* === Contacts start=== */
+.contact-item .contact-item-content {
+	display:inline-block;
+	vertical-align: middle;
+	margin-left: 15px;
+}
+.contact-item-content span.contact-title {
+	font:400 12px "Dosis", sans-serif;
+	letter-spacing: 0.3em;
+	text-transform: uppercase;
+	margin-bottom: 12px;
+	color:#777;
+}
+.contact-item-content span.contact-data {
+	font: 300 15px/1 'Open Sans', sans-serif;
+	color:#444;
+}
+.contact-item .contact-item-content span {
+	display: block;
+}
+/* === Contacts end=== */
+/* === Footer start=== */
+.footer .footer-logo {
+	margin-bottom: 24px;
+}
+.footer .footer-nav {
+	margin-bottom: 110px;
+}
+.footer .footer-nav li {
+	display: inline-block;
+}
+.footer .footer-nav li + li {
+	margin-left: 14px;
+}
+.footer .footer-info .footer-copyright {
+	font:400 12px "Dosis", sans-serif;
+	letter-spacing: 0.5em;
+	text-transform: uppercase;
+	margin-bottom: 16px;
+	color:#111;
+}
+.footer .footer-info .footer-date {
+	font: 400 11px 'Open Sans', sans-serif;
+	color:#999;
+}
+.footer .footer-info span {
+	display: block;
+	margin-bottom: 60px;
+}
+.footer .footer-info {
+	margin-bottom: 60px;
+}
+/* === Footer end === */
 /* === Custom styles end === */
 
 
