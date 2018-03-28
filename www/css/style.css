@@ -380,6 +380,9 @@ textarea.form-control {
 }
 /* ---- Lets talk end---- */
 /* ---- Portfolio---- */
+.default-section.portfolio {
+    padding-bottom: 0;
+}
 .text-portfolio {
 	max-width: 750px;
 	margin: 0 auto;
