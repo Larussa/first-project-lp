@@ -633,7 +633,7 @@ textarea.form-control {
 .form-info-submit {
 	margin-top: 20px;
 }
-.contact-form .form-info {
+.form-info-submit .form-info {
 	line-height: 38px;
 }
 .contact-form .form-control + .form-control {
