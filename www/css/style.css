@@ -397,6 +397,10 @@ textarea.form-control {
 	font-size: 12px;
 }
 
+.form-info span {
+	padding-left: 5px;
+}
+
 .romb-icon {
 	display: inline-block;
 	width: 25px;
@@ -437,20 +441,21 @@ textarea.form-control {
 	bottom: 30px;
 	cursor: pointer;
 }
-@media (max-width:767px){
-	.btn, .btn.btn-black  {
+
+@media (max-width:767px) {
+	.btn, .btn.btn-black {
 		display: inline-block;
-	width: 100%;
+		width: 100%;
 		font-size: 16px;
 		letter-spacing: .2em;
-	}	
+	}
 	.btn.btn-xs {
 		padding: 10px 15px;
 		font-size: 14px;
 	}
 	.btn.btn-xs, .btn.btn-default {
 		width: 50%;
-	} 
+	}
 }
 
 /* ===== Default component end ===== */
@@ -873,7 +878,7 @@ textarea.form-control {
 		vertical-align: middle;
 		margin-left: 25%;
 		width: 44px;
-		}
+	}
 	#tabs .tabs-nav .icon-title {
 		display: inline-block;
 		font-size: 14px;
@@ -1262,12 +1267,14 @@ textarea.form-control {
 .subscribe .form-info {
 	margin-top: 17px;
 }
+
 @media (max-width:767px) {
-.subscribe form .form-control {
-	max-width: 100%;
-	margin-bottom: 20px;
+	.subscribe form .form-control {
+		max-width: 100%;
+		margin-bottom: 20px;
+	}
 }
-}
+
 /* === Subscribe End=== */
 
 /* === Contacts start=== */
@@ -1286,7 +1293,7 @@ textarea.form-control {
 	font: 400 12px "Dosis", sans-serif;
 	letter-spacing: 0.3em;
 	text-transform: uppercase;
-	margin-bottom: 12px;
+	margin-bottom: 10px;
 	color: #777;
 }
 
@@ -1360,6 +1367,7 @@ textarea.form-control {
 		margin-top: 10px;
 	}
 }
+
 @media (max-width:576px) {
 	.contact-form .form-info-submit {
 		margin-top: 0px;
@@ -1372,6 +1380,7 @@ textarea.form-control {
 		padding: 15px 0;
 	}
 }
+
 /* === Contacts end=== */
 
 /* === map start=== */
