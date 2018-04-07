@@ -16,47 +16,47 @@
 #### Компоненты
 ###### 1. Стилизируем заголовки:
 ```scss /* или css */
-    .title.title-white
-    .title.section-title 
-    .title.section-title-light 
-    .title-small
+.title.title-white
+.title.section-title 
+.title.section-title-light 
+.title-small
 ```
 ###### 2. Стандартные кнопки:
 ```scss /* или css */
-    .btn
-    .btn[disabled]
-    .btn.btn-default
-    .btn.btn-xs 
-    .romb-icon
-    .romb-icon.black-icon 
-    .romb-icon.white-icon 
-    .romb-icon.transparent-icon
+.btn
+.btn[disabled]
+.btn.btn-default
+.btn.btn-xs 
+.romb-icon
+.romb-icon.black-icon 
+.romb-icon.white-icon 
+.romb-icon.transparent-icon
 ```  
 ###### 3. Отступы между стандартными блоками:
 ```scss /* или css */
-    .default-section
-    .small-section
-    .container 
-    .container-fluid
+.default-section
+.small-section
+.container 
+.container-fluid
 ```
 
 ###### 3. Стилизируем стандартную текстовую информацию:
 ```scss /* или css */
-    .text-default
+.text-default
 ``` 
 ##### Классы
 
 ###### 1. Выравнивание элементов по горизонтали и вертикали:
 ```scss /* или css */
-    .text-center
-    .text-right
-    .text-justify
-    .m-auto
+.text-center
+.text-right
+.text-justify
+.m-auto
 ```    
 ##### 2. Цвет для фона:
 ```scss /* или css */
-    .bg-black
-    .bg-grey
+.bg-black
+.bg-grey
 ```
 ##### 3. Стилизируем ***табы***: 
 * Табы в ***.default-section .services***
@@ -93,14 +93,14 @@
 ```
 ##### 3. Стилизируем элементы формы:
 ```scss /* или css */
-    .form-control 
-    .textarea.form-control 
-    .form-control[disabled], 
-    .form-control.disabled 
-    .form-control.error 
-    .form-info 
-    .form-info .fa 
-    .form-info span 
+.form-control 
+.textarea.form-control 
+.form-control[disabled], 
+.form-control.disabled 
+.form-control.error 
+.form-info 
+.form-info .fa 
+.form-info span 
 ```
 
 ##### 4. Стилизируем карусель
@@ -137,7 +137,7 @@
 2. .inner
 
  ```scss /* или css */
- .inner::before 
+.inner::before 
 .inner-content
 .inner-content h1 
 .inner-content span
