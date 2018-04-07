@@ -13,7 +13,11 @@
     // init slick nav 
     $('.header-nav').slicknav({
         appendTo: '.header .container-fluid',
-        label:''
+        label:'',
+        
     });
+    $(document).on("vclick", ".slicknav", function() {
+        // Whatever you want to do
+      });
     });
 
