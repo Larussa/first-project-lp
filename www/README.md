@@ -15,11 +15,14 @@
 #### Стандартные компоненты и классы
 #### Компоненты
 ###### 1. Стилизируем заголовки:
+```scss /* или css */
     .title.title-white
     .title.section-title 
     .title.section-title-light 
     .title-small
+```
 ###### 2. Стандартные кнопки:
+```scss /* или css */
     .btn
     .btn[disabled]
     .btn.btn-default
@@ -27,23 +30,34 @@
     .romb-icon
     .romb-icon.black-icon 
     .romb-icon.white-icon 
-    .romb-icon.transparent-icon 
+    .romb-icon.transparent-icon
+```  
 ###### 3. Отступы между стандартными блоками:
+```scss /* или css */
     .default-section
     .small-section
     .container 
     .container-fluid
+```
+
 ###### 3. Стилизируем стандартную текстовую информацию:
+```scss /* или css */
     .text-default
+``` 
 ##### Классы
+
 ###### 1. Выравнивание элементов по горизонтали и вертикали:
+```scss /* или css */
     .text-center
     .text-right
     .text-justify
     .m-auto
+```    
 ##### 2. Цвет для фона:
+```scss /* или css */
     .bg-black
     .bg-grey
+```
 ##### 3. Стилизируем ***табы***: 
 * Табы в ***.default-section .services***
 ```scss /* или css */
@@ -55,7 +69,7 @@
 #tabs .tabs-nav .icon 
 #tabs .tabs-panel 
 ```
-##### 3. Стилизируем ***Skills*** **.default-section .about-studio**:
+##### 3. Стилизируем ***Skills***  **.default-section .about-studio**:
 
 ```scss /* или css */
 .team-item .team-item-skills
@@ -66,8 +80,9 @@
 .skill-item
 .progress-wrapp 
 ```
-***для анимации скилов*** 
-```scss /* или css */.progress-wrapp .progress 
+- для анимации скилов
+```scss /* или css */
+.progress-wrapp .progress 
 .progress-wrapp .progress.branding 
 .progress-wrapp .progress.design 
 .progress-wrapp .progress.development
@@ -77,6 +92,7 @@
 .team-item .team-item-img:hover .block1 .development 
 ```
 ##### 3. Стилизируем элементы формы:
+```scss /* или css */
     .form-control 
     .textarea.form-control 
     .form-control[disabled], 
@@ -85,10 +101,10 @@
     .form-info 
     .form-info .fa 
     .form-info span 
-    
+```
+
 ##### 4. Стилизируем карусель
  ```scss /* или css */
-
 .reviews-carousel .icon 
 .reviews-carousel p
 .reviews-carousel .review-author
